@@ -1,0 +1,29 @@
+{
+  "data": {
+    "name": "DECT Cordless Series [DP710,DP715]",
+    "id": "6",
+    "directory": "dp71x",
+    "firmware_ver": "",
+    "firmware_md5sum": "",
+    "firmware_pkg": "",
+    "description": "Use Grandstream Encrypted Compiler By Default",
+    "configuration_files": "cfg$mac",
+    "changelog": "",
+    "provisioning_types": [
+      "tftp",
+      "http"
+    ],
+    "model_list": [
+      {
+        "model": "DP715",
+        "lines": "5",
+        "id": "1",
+        "template_data": [
+          "general.json",
+          "profiles.json",
+          "handsets.json"
+        ]
+      }
+    ]
+  }
+}

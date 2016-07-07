@@ -1,0 +1,518 @@
+{
+  "template_data":{
+    "category":[
+      {
+        "name":"Accounts",
+        "subcategory":[
+          {
+            "name":"Account Settings",
+            "item":[
+              {
+                "description":"Account Settings For 3-Line Phones",
+                "type":"group"
+              },
+              {
+                "variable":"$dialplan1",
+                "default_value":"{ x%2B | *x%2B | *xx*x%2B }",
+                "description":"Account 1 Dialplan",
+                "type":"input"
+              },
+              {
+                "variable":"$voicemail1",
+                "default_value":"*97",
+                "description":"Account 1 Voicemail Code",
+                "type":"input"
+              },
+              {
+                "variable":"$acct1_ringtone",
+                "default_value":"0",
+                "description":"Account 1 Ringtone",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_match_rule_1",
+                "default_value":"",
+                "description":"Account 1 Matching Rule 1",
+                "type":"input"
+              },
+              {
+                "variable":"$acct1_match_ring_1",
+                "default_value":"0",
+                "description":"Account 1 Matching Ring 1",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_match_rule_2",
+                "default_value":"",
+                "description":"Account 1 Matching Rule 2",
+                "type":"input"
+              },
+              {
+                "variable":"$acct1_match_ring_2",
+                "default_value":"0",
+                "description":"Account 1 Matching Ring 2",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_match_rule_3",
+                "default_value":"",
+                "description":"Account 1 Matching Rule 3",
+                "type":"input"
+              },
+              {
+                "variable":"$acct1_match_ring_3",
+                "default_value":"0",
+                "description":"Account 1 Matching Ring 3",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_enable_call_features",
+                "default_value":"0",
+                "description":"Account 1 Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_allow_custom_call_info",
+                "default_value":"1",
+                "description":"Auto Answer By Call-Info",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct1_custom_call_info",
+                "default_value":"answer-after=0",
+                "description":"Custom Call Info",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$dialplan2",
+                "default_value":"{ x%2B | *x%2B | *xx*x%2B }",
+                "description":"Account 1 Dialplan",
+                "type":"input"
+              },
+              {
+                "variable":"$voicemail2",
+                "default_value":"*97",
+                "description":"Account 2 Voicemail Code",
+                "type":"input"
+              },
+              {
+                "variable":"$acct2_ringtone",
+                "default_value":"0",
+                "description":"Account 2 Ringtone",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_match_rule_1",
+                "default_value":"",
+                "description":"Account 1 Matching Rule 1",
+                "type":"input"
+              },
+              {
+                "variable":"$acct2_match_ring_1",
+                "default_value":"0",
+                "description":"Account 2 Matching Ring 1",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_match_rule_2",
+                "default_value":"",
+                "description":"Account 2 Matching Rule 2",
+                "type":"input"
+              },
+              {
+                "variable":"$acct2_match_ring_2",
+                "default_value":"0",
+                "description":"Account 2 Matching Ring 2",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_match_rule_3",
+                "default_value":"",
+                "description":"Account 2 Matching Rule 3",
+                "type":"input"
+              },
+              {
+                "variable":"$acct2_match_ring_3",
+                "default_value":"0",
+                "description":"Account 2 Matching Ring 3",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_enable_call_features",
+                "default_value":"0",
+                "description":"Account 2 Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_allow_custom_call_info",
+                "default_value":"1",
+                "description":"Auto Answer By Call-Info",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct2_custom_call_info",
+                "default_value":"answer-after=0",
+                "description":"Custom Call Info",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$dialplan3",
+                "default_value":"{ x%2B | *x%2B | *xx*x%2B }",
+                "description":"Account 3 Dialplan",
+                "type":"input"
+              },
+              {
+                "variable":"$voicemail3",
+                "default_value":"*97",
+                "description":"Account 3 Voicemail Code",
+                "type":"input"
+              },
+              {
+                "variable":"$acct3_ringtone",
+                "default_value":"0",
+                "description":"Account 3 Ringtone",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_match_rule_1",
+                "default_value":"",
+                "description":"Account 3 Matching Rule 1",
+                "type":"input"
+              },
+              {
+                "variable":"$acct3_match_ring_1",
+                "default_value":"0",
+                "description":"Account 3 Matching Ring 1",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_match_rule_2",
+                "default_value":"",
+                "description":"Account 3 Matching Rule 2",
+                "type":"input"
+              },
+              {
+                "variable":"$acct3_match_ring_2",
+                "default_value":"0",
+                "description":"Account 3 Matching Ring 2",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_match_rule_3",
+                "default_value":"",
+                "description":"Account 3 Matching Rule 3",
+                "type":"input"
+              },
+              {
+                "variable":"$acct3_match_ring_3",
+                "default_value":"0",
+                "description":"Account 3 Matching Ring 3",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"System Ring Tone",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Custom Ring Tone 1",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Custom Ring Tone 2",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Custom Ring Tone 3",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_enable_call_features",
+                "default_value":"0",
+                "description":"Account 3 Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_allow_custom_call_info",
+                "default_value":"1",
+                "description":"Auto Answer By Call-Info",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$acct3_custom_call_info",
+                "default_value":"answer-after=0",
+                "description":"Custom Call Info",
+                "type":"input"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

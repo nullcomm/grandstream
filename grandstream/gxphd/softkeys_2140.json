@@ -1,0 +1,250 @@
+{
+  "template_data":{
+    "category":[
+      {
+        "name":"Softkeys",
+        "subcategory":[
+          {
+            "name":"Softkeys for GXP2140",
+            "item":[
+              {
+                "variable":"$key1_mode",
+                "default_value":"0",
+                "description":"Key 1 Mode",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Default",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Speed Dial",
+                    "value":"10"
+                  },
+                  {
+                    "text":"Speed Dial via Active Account",
+                    "value":"14"
+                  },
+                  {
+                    "text":"Voicemail",
+                    "value":"16"
+                  },
+                  {
+                    "text":"Call Return",
+                    "value":"17"
+                  },
+                  {
+                    "text":"Intercom",
+                    "value":"20"
+                  },
+                  {
+                    "text":"LDAP Search",
+                    "value":"21"
+                  },
+                  {
+                    "text":"Call Log",
+                    "value":"25"
+                  }
+                ]
+              },
+              {
+                "variable":"$key1_account",
+                "default_value":"0",
+                "description":"Key 1 Account",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Account 1",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Account 2",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Account 3",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Account 4",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$key1_name",
+                "default_value":"",
+                "description":"Key1 Name",
+                "type":"input"
+              },
+              {
+                "variable":"$key1_value",
+                "default_value":"",
+                "description":"Key1 Value",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$key2_mode",
+                "default_value":"0",
+                "description":"Key 2 Mode",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Default",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Speed Dial",
+                    "value":"10"
+                  },
+                  {
+                    "text":"Speed Dial via Active Account",
+                    "value":"14"
+                  },
+                  {
+                    "text":"Voicemail",
+                    "value":"16"
+                  },
+                  {
+                    "text":"Call Return",
+                    "value":"17"
+                  },
+                  {
+                    "text":"Intercom",
+                    "value":"20"
+                  },
+                  {
+                    "text":"LDAP Search",
+                    "value":"21"
+                  },
+                  {
+                    "text":"Call Log",
+                    "value":"25"
+                  }
+                ]
+              },
+              {
+                "variable":"$key2_account",
+                "default_value":"0",
+                "description":"Key 1 Account",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Account 1",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Account 2",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Account 3",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Account 4",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$key2_name",
+                "default_value":"",
+                "description":"Key2 Name",
+                "type":"input"
+              },
+              {
+                "variable":"$key2_value",
+                "default_value":"",
+                "description":"Key2 Value",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$key3_mode",
+                "default_value":"0",
+                "description":"Key 3 Mode",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Default",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Speed Dial",
+                    "value":"10"
+                  },
+                  {
+                    "text":"Speed Dial via Active Account",
+                    "value":"14"
+                  },
+                  {
+                    "text":"Voicemail",
+                    "value":"16"
+                  },
+                  {
+                    "text":"Call Return",
+                    "value":"17"
+                  },
+                  {
+                    "text":"Intercom",
+                    "value":"20"
+                  },
+                  {
+                    "text":"LDAP Search",
+                    "value":"21"
+                  },
+                  {
+                    "text":"Call Log",
+                    "value":"25"
+                  }
+                ]
+              },
+              {
+                "variable":"$key3_account",
+                "default_value":"0",
+                "description":"Key 3 Account",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Account 1",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Account 2",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Account 3",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Account 4",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$key3_name",
+                "default_value":"",
+                "description":"Key3 Name",
+                "type":"input"
+              },
+              {
+                "variable":"$key3_value",
+                "default_value":"",
+                "description":"Key3 Value",
+                "type":"input"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

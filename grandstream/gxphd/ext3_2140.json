@@ -1,0 +1,143 @@
+{
+  "template_data":{
+    "category":[
+      {
+        "name":"EXT3",
+        "subcategory":[
+          {
+            "name":"Extension Board 3 For GXP2140",
+            "item":[
+              {
+                "description":"Extension Board 3 For GXP2140",
+                "type":"loop",
+                "loop_start":"1",
+                "loop_end":"40",
+                "data":{
+                  "item":[
+                    {
+                      "variable":"$EXT3_mode",
+                      "default_value":"-1",
+                      "category":"keys",
+                      "description":"Key {$count} Mode",
+                      "type":"list",
+                      "data":[
+                        {
+                          "text":"Empty",
+                          "value":"-1"
+                        },
+                        {
+                          "text":"Speed Dial",
+                          "value":"0"
+                        },
+                        {
+                          "text":"BLF",
+                          "value":"1"
+                        },
+                        {
+                          "text":"Presence Watcher",
+                          "value":"2"
+                        },
+                        {
+                          "text":"eventlist BLF",
+                          "value":"3"
+                        },
+                        {
+                          "text":"Speed Dial via active account",
+                          "value":"4"
+                        },
+                        {
+                          "text":"DialDTMF",
+                          "value":"5"
+                        },
+                        {
+                          "text":"Voicemail",
+                          "value":"6"
+                        },
+                        {
+                          "text":"CallReturn",
+                          "value":"7"
+                        },
+                        {
+                          "text":"Transfer",
+                          "value":"8"
+                        },
+                        {
+                          "text":"CallPark",
+                          "value":"9"
+                        },
+                        {
+                          "text":"Intercom",
+                          "value":"10"
+                        },
+                        {
+                          "text":"LDAP Search",
+                          "value":"11"
+                        },
+                        {
+                          "text":"Multicast Paging",
+                          "value":"13"
+                        },
+                        {
+                          "text":"Record",
+                          "value":"14"
+                        },
+                        {
+                          "text":"Call Log",
+                          "value":"15"
+                        },
+                        {
+                          "text":"Monitored Call Park",
+                          "value":"16"
+                        }
+                      ]
+                    },
+                    {
+                      "variable":"$EXT3_account",
+                      "default_value":"0",
+                      "category":"keys",
+                      "description":"Account for Key {$count}",
+                      "type":"list",
+                      "data":[
+                        {
+                          "text":"Account 1",
+                          "value":"0"
+                        },
+                        {
+                          "text":"Account 2",
+                          "value":"1"
+                        },
+                        {
+                          "text":"Account 3",
+                          "value":"2"
+                        },
+                        {
+                          "text":"Account 4",
+                          "value":"3"
+                        }
+                      ]
+                    },
+                    {
+                      "variable":"$EXT3_uid",
+                      "default_value":"",
+                      "description":"UserID for Key {$count}",
+                      "type":"input"
+                    },
+                    {
+                      "variable":"$EXT3_name",
+                      "default_value":"",
+                      "description":"Name for Key {$count}",
+                      "type":"input"
+                    },
+                    {
+                      "type":"break"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

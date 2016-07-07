@@ -1,0 +1,163 @@
+{
+  "template_data":{
+    "category":[
+      {
+        "name":"Profiles",
+        "subcategory":[
+          {
+            "name":"Profile Settings",
+            "item":[
+              {
+                "description":"Profile Settings",
+                "type":"group"
+              },
+              {
+                "variable":"$profile_1_active",
+                "default_value":"1",
+                "description":"Profile 1 Active",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"No",
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "variable":"$profile_1_server",
+                "default_value":"{$srvip}",
+                "description":"Primary SIP Server",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_1_dialplan",
+                "default_value":"{ x+ | *x+ | *xx*x+ }",
+                "description":"Dialplan",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_1_call_features",
+                "default_value":"0",
+                "description":"Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"No",
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "variable":"$profile_1_hg_ring_timeout",
+                "default_value":"20",
+                "description":"Hunting Group Ring Timeout. (5-300)",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_1_hg_type",
+                "default_value":"1",
+                "description":"Hunting Group Type",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Linear",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Parallel",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Shared Line",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$profile_2_active",
+                "default_value":"0",
+                "description":"Profile 2 Active",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"No",
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "variable":"$profile_2_server",
+                "default_value":"",
+                "description":"Primary SIP Server",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_2_dialplan",
+                "default_value":"{ x+ | *x+ | *xx*x+ }",
+                "description":"Dialplan",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_2_call_features",
+                "default_value":"0",
+                "description":"Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"No",
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "variable":"$profile_2_hg_ring_timeout",
+                "default_value":"20",
+                "description":"Hunting Group Ring Timeout. (5-300)",
+                "type":"input"
+              },
+              {
+                "variable":"$profile_2_hg_type",
+                "default_value":"1",
+                "description":"Hunting Group Type",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Linear",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Parallel",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Shared Line",
+                    "value":"3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "data": {
+    "name": "GXP Enterprise HD series [1100,1105,1400,1405,1450,2100,2110,2120,2124,2130,2135,2140,2160,2170]",
+    "id": "4",
+    "directory": "gxphd",
+    "firmware_ver": 1378149402,
+    "firmware_md5sum": "24a829b71af4f929f504029a0e2d314c",
+    "firmware_pkg": "gxphd_firmware.tgz",
+    "description": "Use Grandstream Encrypted Compiler By Default",
+    "configuration_files": "cfg$mac,cfg$mac.xml",
+    "changelog": "",
+    "provisioning_types": [
+      "tftp",
+      "http"
+    ],
+    "model_list": [
+      {
+        "model": "GXP1100",
+        "lines": "1",
+        "id": "1",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP1105",
+        "lines": "1",
+        "id": "2",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP1400",
+        "lines": "2",
+        "id": "3",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP1405",
+        "lines": "2",
+        "id": "4",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP1450",
+        "lines": "2",
+        "id": "5",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP2100",
+        "lines": "4",
+        "id": "6",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP2110",
+        "lines": "4",
+        "id": "7",
+        "template_data": [
+          "template_data.json",
+          "keys_gxp2110.json",
+          "ext_b_1.json",
+          "ext_b_2.json"
+        ]
+      },
+      {
+        "model": "GXP2120",
+        "lines": "6",
+        "id": "8",
+        "template_data": [
+          "template_data.json",
+          "keys.json",
+          "ext_b_1.json",
+          "ext_b_2.json"
+        ]
+      },
+      {
+        "model": "GXP2124",
+        "lines": "4",
+        "id": "9",
+        "template_data": [
+          "template_data.json",
+          "keys.json"
+        ]
+      },
+      {
+        "model": "GXP2130",
+        "lines": "3",
+        "id": "10",
+        "template_data": [
+          "general.json",
+          "accounts_3_lines.json",
+          "mpk_2130.json",
+          "vpk_2130.json"
+        ]
+      },
+      {
+        "model": "GXP2135",
+        "lines": "4",
+        "id": "11",
+        "template_data": [
+          "general.json",
+          "accounts_4_lines.json",
+          "vpk_2135.json"
+        ]
+      },
+      {
+        "model": "GXP2140",
+        "lines": "4",
+        "id": "12",
+        "template_data": [
+          "general.json",
+          "accounts_4_lines.json",
+          "softkeys_2140.json",
+          "vpk_2140.json",
+          "ext1_2140.json",
+          "ext2_2140.json",
+          "ext3_2140.json",
+          "ext4_2140.json"
+        ]
+      },
+      {
+        "model": "GXP2160",
+        "lines": "6",
+        "id": "13",
+        "template_data": [
+          "general.json",
+          "accounts_6_lines.json",
+          "softkeys_2160.json",
+          "mpk_2160.json",
+          "vpk_2160.json"
+        ]
+      },
+      {
+        "model": "GXP2170",
+        "lines": "6",
+        "id": "14",
+        "template_data": [
+          "general.json",
+          "accounts_6_lines.json",
+          "vpk_2170.json",
+          "ext1_2170.json",
+          "ext2_2170.json",
+          "ext3_2170.json",
+          "ext4_2170.json"
+        ]
+      }
+    ]
+  }
+}
