@@ -5292,46 +5292,46 @@ P6008 =
 # Enable Phonebook XML Download. # 0 - Disabled, 1 - Enabled, use HTTP, 2 - Enabled, use TFTP, 3 - Enabled, use HTTPS. Default is 0
 # Number: 0, 1, 2, 3
 # Mandatory
-P330 = 0
+P330 ={$pb_enable_xml}
 
 # HTTP/HTTPS User Name
 # String
-P6713 =
+P6713 ={$pb_http_uid}
 
 # HTTP/HTTPS Password.
 # String
-P6714 =
+P6714 ={$pb_http_pwd}
 
 # Phonebook XML Server Path
 # This is a string of up to 256 characters that should contain a path to the XML file. It MUST be in the host/path format.
 # For example: directory.grandstream.com/engineering
 # String
-P331 =
+P331 ={$pb_xml_server}
 
 # Phonebook Download Interval (in minutes)
 # Valid value range is 5-720. Default is 0 for disabled
 # Number: 0, 5-720; 
-P332 = 0
+P332 ={$pb_update_interval}
 
 # Remove Manually-edited entries on Download. 0 - No, 1 - Yes. Default is 1
 # Number: 0, 1
 # Mandatory
-P333 = 1
+P333 ={$pb_remove_entries}
 
 # Sort Phonebook by. 0 - Last Name, 1 - First Name. Default is 0
 # Number: 0, 1
 # Mandatory
-P2914 = 0
+P2914 ={$pb_sort}
 
 # Phonebook Key Function. 0 - Default, 1 - LDAP Search, 2 - Local Phonebook, 3 - Local Group, 4 - Broadsoft Phonebook
 # Number: 0, 1, 2, 3, 4.
 # Mandatory
-P1526 = 0
+P1526 ={$pb_key_func}
 
 # Default search mode. 0 - Quick match, 1 - Exact match. Default is 0
 # Number: 0, 1.
 # Mandatory
-P2970 = 0
+P2970 ={$pb_search_mode}
 
 ##############################################################################
 ##  Phonebook/LDAP

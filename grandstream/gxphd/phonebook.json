@@ -12,247 +12,125 @@
                 "type":"group"
               },
               {
-                "variable":"$admin_pass",
-                "default_value":"admin",
-                "description":"Administration Password",
-                "type":"input"
-              },
-              {
-                "type":"break"
-              },
-              {
-                "variable":"$ntp_server",
-                "default_value":"us.pool.ntp.org",
-                "description":"NTP Server",
-                "type":"input"
-              },
-              {
-                "variable":"$ntp_update_interval",
-                "default_value":"1440",
-                "description":"NTP Update Interval (5-1440)",
-                "type":"input"
-              },
-              {
-                "variable":"$date_format",
-                "default_value":"1",
-                "description":"Date Display Format",
+                "variable":"$pb_enable_xml",
+                "default_value":"0",
+                "description":"Enable Phonebook XML Download",
                 "type":"list",
                 "data":[
                   {
-                    "text":"yyyy-mm-dd eg. 2011-10-31",
+                    "text":"Disabled",
                     "value":"0"
                   },
                   {
-                    "text":"mm-dd-yyyy eg. 10-31-2011",
+                    "text":"Enabled, Use HTTP",
                     "value":"1"
                   },
                   {
-                    "text":"dd-mm-yyyy eg. 31-10-2011",
+                    "text":"Enabled, Use TFTP",
                     "value":"2"
                   },
                   {
-                    "text":"dddd, MMMM dd eg. Monday, October 31",
+                    "text":"Enabled, Use HTTPS",
                     "value":"3"
-                  },
-                  {
-                    "text":"MMMM dd, dddd eg. October 31, Monday",
-                    "value":"4"
                   }
                 ]
               },
               {
-                "variable":"$time_format",
-                "default_value":"0",
-                "description":"Time Display Format",
-                "type":"radio",
-                "data":[
-                  {
-                    "text":"12 Hour",
-                    "value":"0"
-                  },
-                  {
-                    "text":"24 Hour",
-                    "value":"1"
-                  }
-                ]
-              },
-              {
-                "type":"break"
-              },
-              {
-                "variable":"$firmware_upgrade_check",
-                "default_value":"0",
-                "description":"Firmware Upgrade and Provisioning",
-                "type":"list",
-                "data":[
-                  {
-                    "text":"Always Check For New Firmware",
-                    "value":"0"
-                  },
-                  {
-                    "text":"Check New Firmware only when F/W pre/suffix changes",
-                    "value":"1"
-                  },
-                  {
-                    "text":"Always Skip the Firmware Check",
-                    "value":"2"
-                  }
-                ]
-              },
-              {
-                "variable":"$firmware_srv_path",
-                "default_value":"{$server_host.line.1}",
-                "description":"Firmware Server Path",
-                "type":"input"
-              },
-              {
-                "variable":"$config_srv_path",
-                "default_value":"{$server_host.line.1}",
-                "description":"Config Server Path",
-                "type":"input"
-              },
-              {
-                "variable":"$firmware_upgrade_type",
-                "default_value":"0",
-                "description":"Firmware Upgrade Server Type",
-                "type":"list",
-                "data":[
-                  {
-                    "text":"TFTP",
-                    "value":"0"
-                  },
-                  {
-                    "text":"HTTP",
-                    "value":"1"
-                  },
-                  {
-                    "text":"HTTPS",
-                    "value":"2"
-                  }
-                ]
-              },
-              {
-                "variable":"$dhcp_override",
-                "default_value":"1",
-                "description":"DHCP Option 44 and 66 Override",
-                "type":"radio",
-                "data":[
-                  {
-                    "text":"Yes",
-                    "value":"1"
-                  },
-                  {
-                    "text":"No",
-                    "value":"0"
-                  }
-                ]
-              },
-              {
-                "variable":"$auto_up",
+                "variable":"$pb_http_uid",
                 "default_value":"",
-                "description":"Automatic Upgrade",
-                "type":"list",
+                "description":"HTTP/HTTPS Username",
+                "type":"input"
+              },
+              {
+                "variable":"$pb_http_pwd",
+                "default_value":"",
+                "description":"HTTP/HTTPS Password",
+                "type":"input"
+              },
+              {
+                "variable":"$pb_xml_server",
+                "default_value":"",
+                "description":"Phonebook XML Server Path",
+                "type":"input"
+              },
+              {
+                "variable":"$pb_update_interval",
+                "default_value":"5",
+                "description":"Download Interval (minutes 5-720, 0-Disabled)",
+                "type":"input"
+              },
+              {
+                "variable":"$pb_remove_entries",
+                "default_value":"1",
+                "description":"Remove Manual Entries on Download",
+                "type":"radio",
                 "data":[
                   {
                     "text":"No",
                     "value":"0"
                   },
                   {
-                    "text":"Yes, based on minute(s) setting",
+                    "text":"Yes",
                     "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$pb_sort",
+                "default_value":"0",
+                "description":"Sort Phonebook by",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Last Name",
+                    "value":"0"
                   },
                   {
-                    "text":"Yes, based on Hour of Day setting",
+                    "text":"First Name",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "variable":"$pb_key_func",
+                "default_value":"0",
+                "description":"Phonebook Key Function",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Default",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Local Phonebook",
                     "value":"2"
                   },
                   {
-                    "text":"Yes, based on Day of Week setting",
+                    "text":"Local Group",
                     "value":"3"
                   }
                 ]
               },
               {
-                "variable":"$minute_setting",
-                "default_value":"10080",
-                "description":"Minute(s) Setting",
-                "type":"input"
-              },
-              {
-                "variable":"$hour_setting",
-                "default_value":"1",
-                "description":"Hour of Day Setting (0-23)",
-                "type":"input"
-              },
-              {
-                "variable":"$day_setting",
-                "default_value":"1",
-                "description":"Day of Week Setting (0-6)",
-                "type":"input"
-              },
-              {
-                "type":"break"
-              },
-              {
-                "variable":"$screensaver_setting",
+                "variable":"$pb_search_mode",
                 "default_value":"0",
-                "description":"Screensaver Settings",
-                "type":"list",
-                "data":[
-                  {
-                    "text":"Off",
-                    "value":"0"
-                  },
-                  {
-                    "text":"On",
-                    "value":"1"
-                  },
-                  {
-                    "text":"On if no VPK is active",
-                    "value":"2"
-                  }
-                ]
-              },
-              {
-                "variable":"$screensaver_timeout",
-                "default_value":"3",
-                "description":"Screensaver Timeout. Minutes (3-60)",
-                "type":"input"
-              },
-              {
-                "type":"break"
-              },
-              {
-                "variable":"$weather_update",
-                "default_value":"0",
-                "description":"Enable Weather Update",
+                "description":"Default Search Mode",
                 "type":"radio",
                 "data":[
                   {
-                    "text":"No",
+                    "text":"Quick Match",
                     "value":"0"
                   },
                   {
-                    "text":"Yes",
+                    "text":"Exact Match",
                     "value":"1"
                   }
                 ]
               },
               {
-                "variable":"$currency_update",
-                "default_value":"0",
-                "description":"Enable Currency Update",
-                "type":"radio",
-                "data":[
-                  {
-                    "text":"No",
-                    "value":"0"
-                  },
-                  {
-                    "text":"Yes",
-                    "value":"1"
-                  }
-                ]
+                "type":"break"
               }
+              //TODO add LDAP support here
             ]
           }
         ]
