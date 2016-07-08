@@ -381,7 +381,7 @@ P63=0
 P31=1
 
 # Unregister On Reboot. 0 - No, 1 - Yes
-P81=0
+P81=1
 
 # Outgoing call without Registration. 0 - No, 1 - Yes
 P109=1
