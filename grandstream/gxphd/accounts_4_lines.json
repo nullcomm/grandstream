@@ -558,7 +558,7 @@
                 "variable":"$acct4_match_ring_1",
                 "default_value":"0",
                 "description":"Account 4 Matching Ring 1",
-                "type":"radio",
+                "type":"list",
                 "data":[
                   {
                     "text":"System Ring Tone",
