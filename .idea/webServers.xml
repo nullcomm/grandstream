@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9e27b87a-9450-438c-914d-fd7aa3ebf0ae" name="Superior Plastics" url="http://192.168.69.32">
+        <fileTransfer host="192.168.69.32" port="22" accessType="SFTP" password="dfd8dfcbdfd9dfdadfc8dfcfdfd8dfd8dfd3" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

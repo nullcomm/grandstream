@@ -26,80 +26,72 @@
                           "value":"-1"
                         },
                         {
-                          "text":"LINE",
+                          "text":"Speed Dial",
                           "value":"0"
                         },
                         {
-                          "text":"Shared line",
+                          "text":"Busy Lamp Field (BLF)",
                           "value":"1"
                         },
                         {
-                          "text":"Speed Dial",
-                          "value":"10"
-                        },
-                        {
-                          "text":"Busy Lamp Field (BLF)",
-                          "value":"11"
-                        },
-                        {
                           "text":"Presence Watcher",
-                          "value":"12"
+                          "value":"2"
                         },
                         {
                           "text":"Eventlist BLF",
-                          "value":"13"
+                          "value":"3"
                         },
                         {
                           "text":"Speed Dial via Active Account",
-                          "value":"14"
+                          "value":"4"
                         },
                         {
                           "text":"Dial DTMF",
-                          "value":"15"
+                          "value":"5"
                         },
                         {
-                          "text":"Voice Mail",
-                          "value":"16"
+                          "text":"Voicemail",
+                          "value":"6"
                         },
                         {
                           "text":"Call Return",
-                          "value":"17"
+                          "value":"7"
                         },
                         {
                           "text":"Transfer",
-                          "value":"18"
+                          "value":"8"
                         },
                         {
                           "text":"Call Park",
-                          "value":"19"
-                        },
-                        {
-                          "text":"Monitored Call Park",
-                          "value":"26"
+                          "value":"9"
                         },
                         {
                           "text":"Intercom",
-                          "value":"20"
+                          "value":"10"
                         },
                         {
                           "text":"LDAP Search",
-                          "value":"21"
+                          "value":"11"
                         },
                         {
                           "text":"Multicast Paging",
-                          "value":"23"
+                          "value":"13"
                         },
                         {
                           "text":"Record",
-                          "value":"24"
+                          "value":"14"
                         },
                         {
                           "text":"Call Log",
-                          "value":"25"
+                          "value":"15"
+                        },
+                        {
+                          "text":"Monitored Call Park",
+                          "value":"16"
                         },
                         {
                           "text":"Menu",
-                          "value":"27"
+                          "value":"17"
                         }
                       ]
                     },
