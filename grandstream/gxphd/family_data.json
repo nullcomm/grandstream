@@ -127,6 +127,7 @@
         "template_data": [
           "general.json",
           "accounts_4_lines.json",
+          "phonebook.json",
           "softkeys_2140.json",
           "vpk_2140.json",
           "ext1_2140.json",
@@ -142,6 +143,7 @@
         "template_data": [
           "general.json",
           "accounts_6_lines.json",
+          "phonebook.json",
           "softkeys_2160.json",
           "mpk_2160.json",
           "vpk_2160.json"
@@ -154,6 +156,7 @@
         "template_data": [
           "general.json",
           "accounts_6_lines.json",
+          "phonebook.json",
           "vpk_2170.json",
           "ext1_2170.json",
           "ext2_2170.json",
