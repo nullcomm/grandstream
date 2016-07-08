@@ -130,7 +130,6 @@
               {
                 "type":"break"
               }
-              //TODO add LDAP support here
             ]
           }
         ]
