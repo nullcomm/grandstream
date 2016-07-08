@@ -1,5 +1,7 @@
 USE `asterisk`;
 DELETE FROM `asterisk`.`endpointman_model_list` WHERE `id`='2411';
+INSERT INTO `asterisk`.`endpointman_model_list` (`id`, `brand`, `model`, `max_lines`, `template_list`, `product_id`, `enabled`, `hidden`) VALUES ('271', '2', 'HT701', '1', 'general.json', '27', '0', '0');
+INSERT INTO `asterisk`.`endpointman_product_list` (`id`, `brand`, `long_name`, `short_name`, `cfg_dir`, `config_files`) VALUES ('27', '2', 'HandyTone ATA [HT701,HT702]', 'HandyTone ATA', 'ht70x', 'cfg$mac');
 UPDATE `asterisk`.`endpointman_model_list` SET `id`='24100' WHERE `id`='244';
 UPDATE `asterisk`.`endpointman_model_list` SET `id`='24200' WHERE `id`='245';
 UPDATE `asterisk`.`endpointman_model_list` SET `id`='24300' WHERE `id`='246';
@@ -24,6 +26,6 @@ INSERT INTO `asterisk`.`endpointman_model_list` (`id`, `brand`, `model`, `max_li
 UPDATE `asterisk`.`endpointman_product_list` SET `long_name`='GXP Enterprise HD series [2100,2110,2120,2130,2135,2140,2160,2170]' WHERE `id`='24';
 INSERT INTO `asterisk`.`endpointman_model_list` (`id`, `brand`, `model`, `max_lines`, `template_list`, `product_id`, `enabled`, `hidden`) VALUES ('261', '2', 'DP715', '5', 'general.json,profiles.json,handsets.json', '26', '0', '0');
 INSERT INTO `asterisk`.`endpointman_product_list` (`id`, `brand`, `long_name`, `short_name`, `cfg_dir`, `config_files`) VALUES ('26', '2', 'DECT Cordless Phones [DP710,DP715]', 'DECT Cordless Phones', 'dp71x', 'cfg$mac');
-INSERT INTO `asterisk`.`endpointman_model_list` (`id`, `brand`, `model`, `max_lines`, `template_list`, `product_id`, `enabled`, `hidden`) VALUES ('271', '2', 'HT701', '1', 'general.json', '7', '0', '0');
+INSERT INTO `asterisk`.`endpointman_model_list` (`id`, `brand`, `model`, `max_lines`, `template_list`, `product_id`, `enabled`, `hidden`) VALUES ('271', '2', 'HT701', '1', 'general.json', '27', '0', '0');
 INSERT INTO `asterisk`.`endpointman_product_list` (`id`, `brand`, `long_name`, `short_name`, `cfg_dir`, `config_files`) VALUES ('27', '2', 'HandyTone ATA [HT701,HT702]', 'HandyTone ATA', 'ht70x', 'cfg$mac');
 

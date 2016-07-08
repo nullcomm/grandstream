@@ -60,22 +60,17 @@ class endpoint_grandstream_ht70x_phone extends endpoint_grandstream_base {
                         'Login' => 'Login',
                         'gnkey' => '0b82'
                     );
-                    
-                     $data = array(
-                        'password' => 'admin'
-                    );
 
                     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
                     $output = curl_exec($ch);
-                    $login_result = json_decode($output, true);
                     $info = curl_getinfo($ch);
                     curl_close($ch);
 
-                    $ch = curl_init("http://" . $ip . "/cgi-bin/api-sys_operation?request=PROV&sid=" . $login_result['body']['sid']);
+                    $ch = curl_init("http://" . $ip . "/cgi-bin/rs");
                     curl_setopt($ch, CURLOPT_COOKIEFILE, $ckfile);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                     $output = curl_exec($ch);
-                    curl_close($ch);                            
+                    curl_close($ch);
                 }
             }
         }
