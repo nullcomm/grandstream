@@ -56,6 +56,14 @@
           "changelog": "",
           "last_modified": null
         }
+        {
+          "id": "7",
+          "name": "HandyTone ATA [HT701,HT702]",
+          "directory": "ht70x",
+          "description": "",
+          "changelog": "",
+          "last_modified": null
+        }
       ],
       "oui_list": [
         "000B82"

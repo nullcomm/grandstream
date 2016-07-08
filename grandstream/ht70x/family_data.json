@@ -1,0 +1,27 @@
+{
+  "data": {
+    "name": "HandyTone ATA [701,702]",
+    "id": "7",
+    "directory": "ht70x",
+    "firmware_ver": "",
+    "firmware_md5sum": "",
+    "firmware_pkg": "",
+    "description": "Use Grandstream Encrypted Compiler By Default",
+    "configuration_files": "cfg$mac",
+    "changelog": "",
+    "provisioning_types": [
+      "tftp",
+      "http"
+    ],
+    "model_list": [
+      {
+        "model": "HT701",
+        "lines": "1",
+        "id": "1",
+        "template_data": [
+          "general.json"
+        ]
+      }
+    ]
+  }
+}

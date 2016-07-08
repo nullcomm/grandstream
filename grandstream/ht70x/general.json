@@ -1,0 +1,173 @@
+{
+  "template_data":{
+    "category":[
+      {
+        "name":"General",
+        "subcategory":[
+          {
+            "name":"General Settings",
+            "item":[
+              {
+                "description":"General Settings",
+                "type":"group"
+              },
+              {
+                "variable":"$admin_pass",
+                "default_value":"admin",
+                "description":"Administration Password",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$ntp_server",
+                "default_value":"us.pool.ntp.org",
+                "description":"NTP Server",
+                "type":"input"
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$dialplan",
+                "default_value":"{ x+ | *x+ }",
+                "description":"Dial Plan",
+                "type":"input"
+              },
+              {
+                "variable":"$enable_call_features",
+                "default_value":"0",
+                "description":"Enable Call Features",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  }
+                ]
+              },
+              {
+                "type":"break"
+              },
+              {
+                "variable":"$firmware_upgrade_check",
+                "default_value":"0",
+                "description":"Firmware Upgrade and Provisioning",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"Always Check For New Firmware",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Check New Firmware only when F/W pre/suffix changes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Always Skip the Firmware Check",
+                    "value":"2"
+                  }
+                ]
+              },
+              {
+                "variable":"$firmware_srv_path",
+                "default_value":"{$srvip}",
+                "description":"Firmware Server Path",
+                "type":"input"
+              },
+              {
+                "variable":"$config_srv_path",
+                "default_value":"{$srvip}",
+                "description":"Config Server Path",
+                "type":"input"
+              },
+              {
+                "variable":"$firmware_upgrade_type",
+                "default_value":"0",
+                "description":"Firmware Upgrade Server Type",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"TFTP",
+                    "value":"0"
+                  },
+                  {
+                    "text":"HTTP",
+                    "value":"1"
+                  },
+                  {
+                    "text":"HTTPS",
+                    "value":"2"
+                  }
+                ]
+              },
+              {
+                "variable":"$dhcp_override",
+                "default_value":"1",
+                "description":"DHCP Option 44 and 66 Override",
+                "type":"radio",
+                "data":[
+                  {
+                    "text":"Yes",
+                    "value":"1"
+                  },
+                  {
+                    "text":"No",
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "variable":"$auto_up",
+                "default_value":"1",
+                "description":"Automatic Upgrade",
+                "type":"list",
+                "data":[
+                  {
+                    "text":"No",
+                    "value":"0"
+                  },
+                  {
+                    "text":"Yes, based on minute(s) setting",
+                    "value":"1"
+                  },
+                  {
+                    "text":"Yes, based on Hour of Day setting",
+                    "value":"2"
+                  },
+                  {
+                    "text":"Yes, based on Day of Week setting",
+                    "value":"3"
+                  }
+                ]
+              },
+              {
+                "variable":"$minute_setting",
+                "default_value":"10080",
+                "description":"Minute(s) Setting",
+                "type":"input"
+              },
+              {
+                "variable":"$hour_setting",
+                "default_value":"1",
+                "description":"Hour of Day Setting (0-23)",
+                "type":"input"
+              },
+              {
+                "variable":"$day_setting",
+                "default_value":"1",
+                "description":"Day of Week Setting (0-6)",
+                "type":"input"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
