@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" uploadOnCheckin="9e27b87a-9450-438c-914d-fd7aa3ebf0ae">
+  <component name="PublishConfigData" autoUpload="On explicit save action" uploadOnCheckin="36cc528e-f7f8-4066-b4d2-fbd77af1bad2">
     <serverData>
       <paths name="Superior Plastics">
         <serverdata>
@@ -17,7 +17,7 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Superior Plastics" />
+    <option name="myUploadOnCheckinName" value="Test Server" />
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
