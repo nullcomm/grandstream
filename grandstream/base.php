@@ -14,7 +14,7 @@ class endpoint_grandstream_base extends endpoint_base {
     function reboot() {
         if (($this->engine == "asterisk") AND ($this->system == "unix")) {
             exec($this->engine_location . " -rx 'sip show peers like " . $this->settings['line'][0]['username'] . "'", $output);
-            if (preg_match("/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/", $output[1], $matches)) {
+            if (preg_match("/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/", $output, $matches)) {
                 $ip = $matches[0];
                 $pass = (isset($this->settings['admin_pass']) ? $this->settings['admin_pass'] : 'admin');
 
